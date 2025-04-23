@@ -25,6 +25,9 @@ body.dark {
     color: #fffefe;
 }
 
+
+/* Trilho do botao dark e light*/
+
 .trilho{
     width: 60px;
     height: 25px;
@@ -52,6 +55,8 @@ body.dark {
 .trilho .indicador {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+
+
 
 
 
@@ -98,7 +103,7 @@ body.dark h3 {
 
 
 body.dark h5 {
-    color: #000000; /* Cor específica para h5 dark */
+    color: #000000; /* cor */
 }
 
 
@@ -211,6 +216,28 @@ section {
     transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
 }
 
+/* Estilos para a seção de fotos */
+.seção-fotos {
+    max-width: 950px; /* Limita a largura da seção */
+    width: 100%; /* Faz a seção ocupar 100% da largura disponível */
+    margin: 43px 0;
+    background-color: rgba(255, 255, 255, 0.05); /* Fundo para seções */
+    padding: 30px;
+    border-radius: 12px; /* Bordas arredondadas */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(50px); /* Começa deslocada para baixo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
+    height: 600px; /* Ajuste o valor conforme necessário para aumentar o tamanho da seção */
+}
+
+.dark .seção-fotos {
+    background-color: #6464646c; /* Fundo para seções no modo escuro */
+    height: 600px; /* Ajuste do tamanho para o modo escuro também */
+}
+
+
+
+
 section.visible {
     opacity: 1; /* Torna a seção visível */
     transform: translateY(0); /* Move a seção para a posição original */
@@ -218,30 +245,30 @@ section.visible {
 
 /* Estilos de texto */
 h1 { 
-    color: #ffffff; /* Azul escuro */
+    color: #ffffff; /* cor */
     margin-bottom: 10px;
 
 
 }
 h2 {
-    color: #ffffff; /* Azul escuro */
+    color: #ffffff; /* cor */
     margin-bottom: 10px;
 }
 
 h3 {
-    color: #ffffff; /* Azul escuro */
+    color: #ffffff; /* cor */
 }
 
 h4 {
-    color: #ffffff; /* Cor específica para h4 */
+    color: #ffffff; /* cor */
 }
 
 h5 {
-    color: #8a8a8a; /* Cor específica para h5 */
+    color: #8a8a8a; /* cor */
 }
 
 p {
-    color: #ffffff; /* Cor do texto dos parágrafos */
+    color: #ffffff; /* cor */
 }
 
 /* Estilos de projetos */
@@ -270,7 +297,7 @@ img {
     align-items: center; /* Centraliza o conteúdo verticalmente */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     color: rgb(255, 255, 255); /* Cor do texto */
-    text-align: center,; /* Centraliza o texto */
+    text-align: center; /* Centraliza o texto */
     font-family: Impact 'Arial Narrow Bold';
     line-height: 0.8;
 }
@@ -347,3 +374,113 @@ img {
     transform: translateY(-10px) scale(1.05);
     filter: grayscale(0%) brightness(110%);
 }
+
+
+.galeria-modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.699); /* Fundo escuro */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+  }
+  
+  .galeria-modal.mostrar {
+    display: flex;
+  }
+  
+  .imagem-galeria {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+
+  
+  .fechar-galeria {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  
+  .setas {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    transform: translateY(-50%);
+  }
+  
+  .seta-esquerda,
+  .seta-direita {
+    font-size: 48px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+  }
+  
+  .seta-esquerda:hover,
+  .seta-direita:hover {
+    color: #f0c000;
+  }
+  
+
+
+  .secao-fotos {
+    display: flex;
+    flex-wrap: wrap; /* Faz os álbuns quebrarem para a linha seguinte, se necessário */
+    gap: 20px; /* Espaçamento entre os álbuns */
+    justify-content: flex; /* Centraliza os álbuns */
+    min-height: 300px; /* Altura mínima para a seção de fotos */
+    padding: 20px; /* Adiciona algum espaço interno */
+}
+
+
+  .album {
+    width: 200px; /* Ajuste o tamanho desejado */
+    height: 200px; /* Ajuste o tamanho desejado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.album img {
+    width: 100%; /* Faz com que a imagem ocupe toda a div */
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a área */
+}
+
+.album:hover {
+    transform: scale(1.05);
+}
+
+.album-cover {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    filter: grayscale(0%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.album-cover:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
