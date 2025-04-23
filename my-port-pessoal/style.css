@@ -326,7 +326,7 @@ img {
 
 
 
-  .dark .logo-linguagem {
+.dark .logo-linguagem {
     transition: transform 0.4s ease-out, filter 0.4s ease-out;
     filter: grayscale(20%);
 }
