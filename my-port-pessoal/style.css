@@ -440,6 +440,20 @@ img {
   }
   
 
+  .dark .seta-esquerda,
+  .dark .seta-direita {
+    font-size: 48px;
+    color: rgb(146, 146, 146);
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+  }
+  
+  .dark .seta-esquerda:hover,
+  .dark .seta-direita:hover {
+    color: #aa0000;
+  }
+  
 
   .secao-fotos {
     display: flex;
