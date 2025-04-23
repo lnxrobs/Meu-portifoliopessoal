@@ -59,12 +59,12 @@
             <h2>Escolha o som para ambientar</h2>
           
             <div class="player-buttons">
-                <button onclick="mudarMusica('techno')" class="logo-linguagem">Techno / House</button>
-              <button onclick="mudarMusica('classico')" class="logo-linguagem">Clássico</button>
-              <button onclick="mudarMusica('rock')" class="logo-linguagem">Rock</button>
-              <button onclick="mudarMusica('summerEletro')" class="logo-linguagem">Summer Eletro</button>
-              <button onclick="mudarMusica('jazz')" class="logo-linguagem" >Jazz</button>
-              <button onclick="mudarMusica('indie')" class="logo-linguagem">Indie</button>
+                <button onclick="mudarMusica('techno')">Techno / House</button>
+              <button onclick="mudarMusica('classico')" >Clássico</button>
+              <button onclick="mudarMusica('rock')" >Rock</button>
+              <button onclick="mudarMusica('summerEletro')" >Summer Eletro</button>
+              <button onclick="mudarMusica('jazz')" >Jazz</button>
+              <button onclick="mudarMusica('indie')">Indie</button>
             </div>
           
             <div class="player-spotify">
@@ -114,7 +114,7 @@
                 
                     <!--Maxon-->
                 <a href="https://www.maxon.net/en/cinema-4d?srsltid=AfmBOooBHteiwsWyHP6GkzpHXeCeuvvoK6RPNIS9Wk6QBHm6QlG6V-4u" title="Maxon - Cinema 4D"> 
-                <img src="https://img.icons8.com/color/42/cinema-4d.png"alt="Cinema 4D"/></a>
+                <img src="https://img.icons8.com/color/42/cinema-4d.png"alt="Cinema 4D"  class="logo-linguagem"/></a>
             </nav>
 
                     
@@ -124,14 +124,38 @@
 
 
 
-        <section id="fotografia">
-            <h2>Fotos </h2>
 
+            <section class="secao-fotos">
+              <h2>Fotografia</h2>
+              <br>
+              <div class="album" data-album="album1">
+                <img class="album-cover" src="Fotos postfolio/Centro urbano noturno/IMG_1750.jpg" alt="Centro Urbano Noturno">
+              </div>
+              <div class="album" data-album="album2">
+                <img class="album-cover" src="Fotos postfolio/Centro urbano Diurno/IMG_1017.jpg" alt="Centro Urbano Diurno ">
+              </div>
+              <div class="album" data-album="album3">
+                <img class="album-cover" src="Fotos postfolio/fotos Eclipse/posta 4.JPEG" alt="Fotos Céu Noturno & Eclipse">
+              </div>
+              <div class="album" data-album="album4">
+                <img class="album-cover" src="Fotos postfolio/Outros/IMG_1110.jpg" alt="Locais">
+                </div>
 
-
-
-
-        </section>
+                <div class="album" data-album="album5">
+                    <img class="album-cover" src="Fotos postfolio/fotos cybershot/DSC02020.JPEG" alt="Cybershot">
+            </div>
+            </section>
+          
+            <!-- MODAL FORA DA SECTION -->
+            <div id="galeriaModal" class="galeria-modal">
+              <span class="fechar-galeria">&times;</span>
+              <img id="imagemGaleria" class="imagem-galeria" src="Fotos postfolio/Outros/IMG_1110.jpg" alt="Imagem em destaque" />
+              <div class="setas">
+                <span class="seta-esquerda">&#10094;</span>
+                <span class="seta-direita">&#10095;</span>
+              </div>
+            </div>
+       
 
 
 
