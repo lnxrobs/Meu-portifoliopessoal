@@ -425,8 +425,8 @@ img {
     transform: translateY(-50%);
   }
   
-  .seta-esquerda,
-  .seta-direita {
+  .dark .seta-esquerda,
+  .dark .seta-direita {
     font-size: 48px;
     color: white;
     cursor: pointer;
@@ -434,14 +434,14 @@ img {
     transition: color 0.3s ease;
   }
   
-  .seta-esquerda:hover,
-  .seta-direita:hover {
+  .dark .seta-esquerda:hover,
+  .dark .seta-direita:hover {
     color: #f0c000;
   }
   
 
-  .dark .seta-esquerda,
-  .dark .seta-direita {
+  .seta-esquerda,
+  .seta-direita {
     font-size: 48px;
     color: rgb(146, 146, 146);
     cursor: pointer;
@@ -449,8 +449,8 @@ img {
     transition: color 0.3s ease;
   }
   
-  .dark .seta-esquerda:hover,
-  .dark .seta-direita:hover {
+  .seta-esquerda:hover,
+  .seta-direita:hover {
     color: #aa0000;
   }
   
