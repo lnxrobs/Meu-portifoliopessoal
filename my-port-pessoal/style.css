@@ -271,7 +271,7 @@ p {
     color: #ffffff; /* cor */
 }
 
-/* Estilos de projetos */
+
 .projeto {
     margin-bottom: 18px;
 }
@@ -457,17 +457,17 @@ img {
 
   .secao-fotos {
     display: flex;
-    flex-wrap: wrap; /* Faz os álbuns quebrarem para a linha seguinte, se necessário */
-    gap: 20px; /* Espaçamento entre os álbuns */
+    flex-wrap: wrap; /* Faz os álbuns quebrarem para a linha seguinte*/
+    gap: 20px; /* Espaçamento */
     justify-content: flex; /* Centraliza os álbuns */
     min-height: 300px; /* Altura mínima para a seção de fotos */
-    padding: 20px; /* Adiciona algum espaço interno */
+    padding: 20px; /* Adiciona espaço interno */
 }
 
 
   .album {
-    width: 200px; /* Ajuste o tamanho desejado */
-    height: 200px; /* Ajuste o tamanho desejado */
+    width: 200px; /*  tamanho  */
+    height: 200px; /* tamanho */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -477,7 +477,7 @@ img {
 .album img {
     width: 100%; /* Faz com que a imagem ocupe toda a div */
     height: 100%;
-    object-fit: cover; /* Garante que a imagem cubra toda a área */
+    object-fit: cover; /*  imagem em toda a área */
 }
 
 .album:hover {
