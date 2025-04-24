@@ -10,6 +10,10 @@
 
 </head>
 <body>
+    <a href="https://lnxrobs.github.io/Meu-portfolio/my-port/" class="botao-voltar">
+        <img src="https://img.icons8.com/material-rounded/30/fire-exit.png" alt="Voltar" style="vertical-align: middle; margin-right: 2px;">
+    </a>
+
     <header>
         <h1>Welcome to my private portfolio</h1>
         
@@ -21,6 +25,7 @@
         </div>
     </div>
 
+        
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre Mim</a></li>
@@ -33,6 +38,7 @@
             </ul>
         </nav>
     </header>
+
 
     <main>
 
@@ -125,55 +131,77 @@
 
 
 
-            <section class="secao-fotos">
-              <h2>Fotografia</h2>
-              <br>
+            <section id="fotografia">
+
+            <h2>Fotografia</h2>
+             <h5>Clique em um dos álbuns abaixo </h5>
+            
+            
+            <section id="fotografia" class="secao-fotos">
+             
+
               <div class="album" data-album="album1">
-                <img class="album-cover" src="Fotos postfolio/Centro urbano noturno/IMG_1750.jpg" alt="Centro Urbano Noturno">
+                
+                <img class="album-cover" title="Fotos do Centro Urbano Noturno" src="Fotos postfolio/Centro urbano noturno/IMG_1750.jpg" alt="Centro Urbano Noturno">
               </div>
+
               <div class="album" data-album="album2">
-                <img class="album-cover" src="Fotos postfolio/Centro urbano Diurno/IMG_1017.jpg" alt="Centro Urbano Diurno ">
+                <img class="album-cover" title="Fotos do Centro Urbano Diurno " src="Fotos postfolio/Centro urbano Diurno/IMG_1017.jpg" alt="Centro Urbano Diurno ">
               </div>
+
               <div class="album" data-album="album3">
-                <img class="album-cover" src="Fotos postfolio/fotos Eclipse/posta 4.JPEG" alt="Fotos Céu Noturno & Eclipse">
+                <img class="album-cover" title="Fotos Céu Noturno & Eclipse" src="Fotos postfolio/fotos Eclipse/posta 4.JPEG" alt="Fotos Céu Noturno & Eclipse">
               </div>
+
               <div class="album" data-album="album4">
-                <img class="album-cover" src="Fotos postfolio/Outros/IMG_1110.jpg" alt="Locais">
+                <img class="album-cover" title="Fotos Locais" src="Fotos postfolio/Outros/IMG_1110.jpg" alt="Locais">
                 </div>
 
                 <div class="album" data-album="album5">
-                    <img class="album-cover" src="Fotos postfolio/fotos cybershot/DSC02020.JPEG" alt="Cybershot">
-            </div>
+                    <img class="album-cover" title="Fotos com Cybershot" src="Fotos postfolio/fotos cybershot/DSC02020.JPEG" alt="Cybershot">
+                </div>
+
+                <div class="album" data-album="album6">
+                     <img class="album-cover" title="Brutalismo Urbano" src="Erechim Diurno/IMG_1703.jpg" alt="Brutalismo Urbano">
+                </div>
+              
+
             </section>
           
-            <!-- MODAL FORA DA SECTION -->
-            <div id="galeriaModal" class="galeria-modal">
-              <span class="fechar-galeria">&times;</span>
-              <img id="imagemGaleria" class="imagem-galeria" src="Fotos postfolio/Outros/IMG_1110.jpg" alt="Imagem em destaque" />
-              <div class="setas">
-                <span class="seta-esquerda">&#10094;</span>
-                <span class="seta-direita">&#10095;</span>
+         
+            </section>
+
+               <!-- MODAL FORA DA SECTION -->
+               <div id="galeriaModal" class="galeria-modal">
+                <span class="fechar-galeria">&times;</span>
+                <img id="imagemGaleria" class="imagem-galeria" src="" alt="Imagem em destaque" />
+                <div class="setas">
+                  <span class="seta-esquerda">&#10094;</span>
+                  <span class="seta-direita">&#10095;</span>
+                </div>
               </div>
-            </div>
-       
 
 
 
 
         <section id="Video">
         
-            <h2>YouTube e Edit.</h2>
-            <iframe width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/O-sYf-N0ptQ?si=F-zBmRFfTKk_JHaB" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen></iframe>
+            <h2>YouTube e Edit</h2>
+            <div class="player-youtube">
+                <iframe width="300" 
+                 height="152" 
+                 src="https://www.youtube.com/embed/O-sYf-N0ptQ?si=F-zBmRFfTKk_JHaB" 
+                 title="YouTube video player" 
+                    frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
         
-                </section>
-        
+                </iframe>
+                </div>
+                        
+            </section>
+                
 
 
 
@@ -183,12 +211,12 @@
             <h2>Contato</h2>
             <!--Linkedin-->
             <a href="https://www.linkedin.com/in/robson-dariva-diniz/" title="Linkedin">
-                <img src="https://img.icons8.com/color/40/linkedin.png" alt="Linkedin"/></a>
+                <img src="https://img.icons8.com/color/40/linkedin.png" alt="Linkedin" class="logo-redes-sociais"/></a>
 
 
             <!--Link contato Gmail-->
                 <a href="mailto:robsondariva87@gmail.com?subject=Ol%C3%A1,+Robson!!" title="Gmail">
-                <img src="https://img.icons8.com/fluency/40/gmail-new.png" alt="Gmail"/></a>
+                <img src="https://img.icons8.com/fluency/40/gmail-new.png" alt="Gmail" class="logo-redes-sociais" /></a>
 
         
         </section>
@@ -198,17 +226,17 @@
             
             <!--Spotify-->
             <a href="https://open.spotify.com/user/22kgidju4cwnxohdnfmkvt65y" title="Spotify">
-                <img src="https://img.icons8.com/fluency/42/spotify.png" alt="Spotify"/></a>
+                <img src="https://img.icons8.com/fluency/42/spotify.png" alt="Spotify" class="logo-redes-sociais"/></a>
             <!--GiHub-->
             <a href="https://github.com/lnxrobs" title="GitHub">
-                <img src="https://img.icons8.com/ios-filled/40/github.png" alt="GitHub"/></a>
+                <img src="https://img.icons8.com/ios-filled/40/github.png" alt="GitHub" class="logo-redes-sociais"/></a>
                 <br>
             <!--Instagram--> 
         <a href="https://www.instagram.com/lnx.robson/" title="Instagram">
-        <img src="https://img.icons8.com/3d-fluency/42/instagram-new.png" alt="Instagram"/></a>
+        <img src="https://img.icons8.com/3d-fluency/42/instagram-new.png" alt="Instagram" class="logo-redes-sociais"/></a>
             <!--YouTube-->
         <a href="https://www.youtube.com/@lnx.robson" title="YouTube">
-         <img src="https://img.icons8.com/color/42/youtube-play.png" alt="@lnx.robson"/></a>
+         <img src="https://img.icons8.com/color/42/youtube-play.png" alt="@lnx.robson" class="logo-redes-sociais" /></a>
          
          
 

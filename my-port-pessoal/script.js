@@ -55,22 +55,26 @@ function mudarMusica(estilo) {
   const setaDireita = document.querySelector(".seta-direita");
   
   const imagensPorAlbum = {
-    album1: ["Fotos postfolio/Centro urbano noturno/IMG_1750.jpg", "Fotos postfolio/Centro urbano noturno/IMG_1798.jpg", "Fotos postfolio/Centro urbano noturno/IMG_9864.jpg", 
+    album1: ["Fotos postfolio/Centro urbano noturno/IMG_1750.jpg", "Erechim Diurno/IMG_2532.jpg", "Fotos postfolio/Centro urbano noturno/IMG_1798.jpg", "Erechim Diurno/IMG_8110.jpg", "Fotos postfolio/Centro urbano noturno/IMG_9864.jpg", 
         "Fotos postfolio/Centro urbano noturno/IMG_6408.jpg", "Fotos postfolio/Centro urbano noturno/IMG_3293.jpg", "Fotos postfolio/Centro urbano noturno/IMG_6411.jpg"],
 
 
-    album2: ["Fotos postfolio/Centro urbano Diurno/IMG_1017.jpg", "Fotos postfolio/Centro urbano Diurno/IMG_1597.jpg", "Fotos postfolio/Centro urbano Diurno/IMG_1590.jpg", "Fotos postfolio/Centro urbano Diurno/IMG_2643.jpg",
-        "Fotos postfolio/Centro urbano Diurno/IMG_9283.jpg", "Fotos postfolio/Centro urbano Diurno/IMG_5416.jpg", "Fotos postfolio/Centro urbano Diurno/IMG_1786.jpg",
-    ],
+    album2: ["Fotos postfolio/Centro urbano Diurno/IMG_1017.jpg", "Fotos postfolio/Centro urbano Diurno/IMG_1597.jpg", "Fotos postfolio/Centro urbano Diurno/IMG_2643.jpg", "Fotos postfolio/Centro urbano Diurno/IMG_1590.jpg",  "Fotos postfolio/Centro urbano Diurno/IMG_1786.jpg",
+       "Erechim Diurno/IMG_2953.jpg", "Erechim Diurno/IMG_2954.jpg", "Erechim Diurno/IMG_2385.jpg", ],
 
     album3: [ "Fotos postfolio/fotos Eclipse/posta 4.JPEG", "Fotos postfolio/fotos Eclipse/IMG_3959(1).jpg", "Fotos postfolio/fotos Eclipse/posta que ta dahopra.jpg", "Fotos postfolio/fotos Eclipse/vai tu tbm.jpg"],
 
-    album4: ["Fotos postfolio/Outros/IMG_1110.jpg", "Fotos postfolio/Outros/IMG_4122.jpg", "Fotos postfolio/Outros/IMG_8051.jpg","Fotos postfolio/Outros/IMG_3228.jpg", "Fotos postfolio/Outros/IMG_1731.jpg", ],
+    album4: ["Fotos postfolio/Outros/IMG_1110.jpg", "Fotos postfolio/Outros/IMG_4122.jpg", "Fotos postfolio/Outros/IMG_8051.jpg","Fotos postfolio/Outros/IMG_3228.jpg", "Fotos postfolio/Outros/IMG_1731.jpg", 
+      "Design e Outros/IMG_1120.jpg", "",
+    ],
 
 
     album5: ["Fotos postfolio/fotos cybershot/DSC02020.JPEG", "Fotos postfolio/fotos cybershot/DSC02016.JPEG", "Fotos postfolio/fotos cybershot/DSC01764.JPEG", "Fotos postfolio/fotos cybershot/DSC02027.JPEG",
-        "Fotos postfolio/fotos cybershot/DSC01761.JPEG", "Fotos postfolio/fotos cybershot/DSC01964.JPEG",
+        "Fotos postfolio/fotos cybershot/DSC01761.JPEG", "Design e Outros/brutalismo cybershjot/DSC02193.JPG", "Design e Outros/brutalismo cybershjot/DSC02192.JPG", "Design e Outros/brutalismo cybershjot/DSC02202.JPG", "Fotos postfolio/fotos cybershot/DSC01964.JPEG",
     ],
+
+    album6: [ "Erechim Diurno/IMG_1703.jpg", "Erechim Diurno/IMG_6973.jpg", "Erechim Diurno/IMG_3632.jpg","Erechim Diurno/IMG_2929.jpg", 
+      "Erechim Diurno/IMG_1528.jpg","Erechim Diurno/IMG_2911.jpg", "Erechim Diurno/IMG_2912.jpg", "Erechim Diurno/IMG_2908.jpg", "Fotos postfolio/Centro urbano Diurno/IMG_5416.jpg", "Fotos postfolio/Centro urbano Diurno/IMG_9283.jpg", ],
   };
   
   let imagensAtuais = [];
