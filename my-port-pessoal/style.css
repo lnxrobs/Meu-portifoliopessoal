@@ -26,6 +26,11 @@
 }
 
 
+.menu {
+    justify-content: center;
+    position: flex;
+}
+
 .dark .botao-voltar {
     position: absolute;
     top: 0px;
@@ -358,6 +363,16 @@ img {
     font-family: Impact 'Arial Narrow Bold';
     line-height: 0.8;
 }
+
+
+.botoes-spotify{
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
 
 
 
